@@ -9,13 +9,13 @@ Local chat-server
   git clone https://github.com/matrix-org/synapse.git
   ```
 
-- Go to subderictory /contrib/docker/
+- Go to subderictory */contrib/docker/*
 
   ```
   cd /path/to/synapse/contrib/docker/
   ```
 
-- Open the file: docker-compose.yml, locate - SYNAPSE_SERVER_NAME and change the value from the default to localhost.
+- Open the file: *docker-compose.yml*, locate *- SYNAPSE_SERVER_NAME* and change the value from the default to *localhost*.
 
   ```
   - SYNAPSE_SERVER_NAME=localhost
@@ -23,7 +23,7 @@ Local chat-server
   
   Save and exit.
   
-- In the current directory, create a new subdirectory ./files and cd into it.
+- In the current directory, create a new subdirectory *./files* and cd into it.
   ```
   mkdir ./files
   cd ./files
@@ -36,7 +36,7 @@ Local chat-server
   ./secrets.sh
   ```
   
-- Go back to the directory /contrib/docker.
+- Go back to the directory */contrib/docker/*.
   ```
   cd ..
   ```
