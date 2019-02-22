@@ -23,15 +23,12 @@ Local chat-server
   
   Save and exit.
   
-- In the terminal, run command:
+- In the current directory, create a new subdirectory ./files and cd into it.
   ```
-  docker-compose build
-  ```
-  
-- In the current directory there should now be a few new subdirectories, go to ./files
-  ```
+  mkdir ./files
   cd ./files
   ```
+  
 - Download the script from this repository and place it in the current folder.
 
 - Run the script. This will generate the files *localhost.tls.crt* and *localhost.tls.key*.
