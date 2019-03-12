@@ -9,10 +9,10 @@ Local chat-server
   git clone https://github.com/matrix-org/synapse.git
   ```
 
-- Go to subderictory */contrib/docker/*
+- Go to subdirectory */contrib/docker/*
 
   ```
-  cd /path/to/synapse/contrib/docker/
+  cd synapse/contrib/docker/
   ```
 
 - Open the file: *docker-compose.yml*, locate *- SYNAPSE_SERVER_NAME* and change the value from the default to *localhost*.
@@ -30,6 +30,9 @@ Local chat-server
   ```
   
 - Download the script from this repository and place it in the current folder.
+```
+wget https://raw.githubusercontent.com/SciCatProject/SciChat-Synapse/master/secrets.sh
+```
 
 - Run the script. This will generate the files *localhost.tls.crt* and *localhost.tls.key*.
   ```
