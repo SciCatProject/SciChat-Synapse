@@ -9,13 +9,13 @@ Local chat-server
   git clone https://github.com/matrix-org/synapse.git
   ```
 
-- Go to subderictory /contrib/docker/
+- Go to subdirectory */contrib/docker/*
 
   ```
-  cd /path/to/synapse/contrib/docker/
+  cd synapse/contrib/docker/
   ```
 
-- Open the file: docker-compose.yml, locate - SYNAPSE_SERVER_NAME and change the value from the default to localhost.
+- Open the file: *docker-compose.yml*, locate *- SYNAPSE_SERVER_NAME* and change the value from the default to *localhost*.
 
   ```
   - SYNAPSE_SERVER_NAME=localhost
@@ -23,23 +23,23 @@ Local chat-server
   
   Save and exit.
   
-- In the terminal, run command:
+- In the current directory, create a new subdirectory *./files* and cd into it.
   ```
-  docker-compose build
-  ```
-  
-- In the current directory there should now be a few new subdirectories, go to ./files
-  ```
+  mkdir ./files
   cd ./files
   ```
+  
 - Download the script from this repository and place it in the current folder.
+```
+wget https://raw.githubusercontent.com/SciCatProject/SciChat-Synapse/master/secrets.sh
+```
 
 - Run the script. This will generate the files *localhost.tls.crt* and *localhost.tls.key*.
   ```
   ./secrets.sh
   ```
   
-- Go back to the directory /contrib/docker.
+- Go back to the directory */contrib/docker/*.
   ```
   cd ..
   ```
